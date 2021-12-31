@@ -4,6 +4,7 @@ import moment from "moment";
 import "./App.css";
 import PostForm from "./Components/PostForm";
 import TheDataTable from "./Components/TheDataTable";
+// import Practice from "./Components/Practice";
 function App() {
   const [persons, setPersons] = useState([]);
   useEffect(() => {
@@ -29,9 +30,10 @@ function App() {
           );
         })}
       </ul>
-      <PostForm />
+      <PostForm persons={persons} />
       {/* <DataTable columns={columns} data={data} /> */}
       <TheDataTable persons={persons} />
+      {/* <Practice /> */}
     </div>
   );
 }

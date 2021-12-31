@@ -36,6 +36,10 @@ const TheDataTable = ({ persons }) => {
   return (
     <div>
       <DataTable columns={columns} data={persons} />
+      {/* {name.filter((name)=>{
+        return(
+        );
+      })} */}
     </div>
   );
 };
